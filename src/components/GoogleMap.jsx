@@ -318,6 +318,15 @@ export class Map extends React.PureComponent {
     return this.context[MAP].getHeading()
   }
 
+/**
+   * Returns the compass heading of aerial imagery. The heading value is measured in degrees (clockwise) from cardinal direction North.
+   * @type number
+   * @public
+   */
+  setHeading(heading) {
+    return this.context[MAP].setHeading(heading)
+  }
+
   /**
    *
    * @type MapTypeId|string
